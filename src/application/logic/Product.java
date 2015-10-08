@@ -56,7 +56,6 @@ public class Product {
 
 	/**
 	 * Return the price of  this product
-	 * @param cart Chart object
 	 * @return price
 	 */	
 	public double getPrice() {
@@ -67,7 +66,7 @@ public class Product {
 	/**
 	 * Returns true if the price of this product
 	 * can be reduced
-	 * @return 
+	 * @return true
 	 */	
 	public boolean canBeReduced() {
 		//Nothing to do here

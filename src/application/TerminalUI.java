@@ -1,6 +1,8 @@
 package application;
 
+import application.logic.Buy2Take3Product;
 import application.logic.Cart;
+import application.logic.DiscountedProduct;
 import application.logic.Product;
 
 import java.util.Scanner;
@@ -49,6 +51,14 @@ public class TerminalUI {
 		take3f2 = input.next().charAt(0);
 
 		p = new Product(seller, name, price);
+
+		if (discount > 0){
+			p = new DiscountedProduct(p, discount);
+		}
+		else if (Character.toLowerCase(take3f2) == 'y'){
+			p = new Buy2Take3Product(p);
+		}
+
 		if (quantity == 1) cart.addProduct(p);
 		else if (quantity < 1) cart.addProduct(p, quantity);
 

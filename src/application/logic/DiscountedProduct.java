@@ -50,7 +50,7 @@ public class DiscountedProduct extends Product {
 	 */
 	public double getPrice(Cart cart) {
 	       // code here
-		return  * (1 - discount / 100);
+		return original.getPrice() * (1 - discount / 100);
 	}
 
 	/**
@@ -59,6 +59,6 @@ public class DiscountedProduct extends Product {
 	 */
 	public String toString() {
 	       // code here
-		return name + "[discounted " + discount + "%]";
+		return original.getName() + "[discounted " + discount + "%]";
 	}
 }
