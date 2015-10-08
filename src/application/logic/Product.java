@@ -1,6 +1,7 @@
 package application.logic;
 
 /**
+ *
  *  Class representing a product to be purchased for the
  *  second assignment in DIT948, 2015 edition.
  */
@@ -28,7 +29,7 @@ public class Product {
 
 	/**
 	 * Construct a new Product from a given product
-	 * @param original
+	 * @param original Product object
 	 */	
 	public Product(Product original) {
 	// Use the constructor implemented above
@@ -41,6 +42,7 @@ public class Product {
 	 */	
 	public final String getSeller() {
 		//code here
+		return seller;
 	}
 
 	/**
@@ -49,15 +51,17 @@ public class Product {
 	 */
 	public final String getName() {
 	       // code here
+		return name;
 	}
 
 	/**
 	 * Return the price of  this product
-	 * @param cart
+	 * @param cart Chart object
 	 * @return price
 	 */	
-	public double getPrice(Cart cart) {
+	public double getPrice() {
 	       // code here
+		return price;
 	}
 
 	/**
@@ -75,5 +79,6 @@ public class Product {
 	 */
 	public String toString() {
 	       // code here
+		return name;
 	}
 }

@@ -35,6 +35,10 @@ public class Cart  {
 	 */
 	public void addProducts(Product[] products) {
 	       // code here
+		for (Product element : products){
+			this.products[position] = element;
+			position ++;
+		}
 	}
 
 	/**
@@ -59,7 +63,7 @@ public class Cart  {
 	 * cart
 	 * Example: 
 	 * CD of Leonard Cohen 22.50 SEK. Sold by Javier
-         * TV [discounted by 20.00%]    4000.00 SEK. Sold by Maria
+	 * TV [discounted by 20.00%]    4000.00 SEK. Sold by Maria
 	 */
 	public String toString() {
 		String result = "";
