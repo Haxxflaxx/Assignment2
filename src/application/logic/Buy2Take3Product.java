@@ -10,6 +10,7 @@ import application.logic.Product;
  *  variable
  */
 
+//hey im here
 public class Buy2Take3Product extends Product {
 
 	//original product
